@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "684029695607",
+    "project_id": "lulus-app-f8e42",
+    "storage_bucket": "lulus-app-f8e42.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:684029695607:android:f158d0893f32a84ead9872",
+        "android_client_info": {
+          "package_name": "com.example.lulu_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOq3LmiU59KB1qGFZTqGo8deIrcekqbo0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -8,6 +8,7 @@ final navigatorkey = GlobalKey<NavigatorState>();
 // ...
 
 main() async {
+  // data
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );

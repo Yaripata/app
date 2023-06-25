@@ -67,6 +67,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '684029695607',
     projectId: 'lulus-app-f8e42',
     storageBucket: 'lulus-app-f8e42.appspot.com',
+    iosClientId: '684029695607-h63egj7qngg9hvk26amc90bck8uo7ft5.apps.googleusercontent.com',
     iosBundleId: 'com.example.luluApp',
   );
 
@@ -76,6 +77,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '684029695607',
     projectId: 'lulus-app-f8e42',
     storageBucket: 'lulus-app-f8e42.appspot.com',
+    iosClientId: '684029695607-h63egj7qngg9hvk26amc90bck8uo7ft5.apps.googleusercontent.com',
     iosBundleId: 'com.example.luluApp',
   );
 }

@@ -18,6 +18,9 @@ class Finanzas extends StatelessWidget {
         title: const Text("Finanzas"),
         backgroundColor: Colors.purple,
       ),
+      body: Center(
+        child: ElevatedButton(onPressed: () {}, child: Text("boton")),
+      ),
     );
   }
 }

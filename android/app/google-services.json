@@ -12,7 +12,12 @@
           "package_name": "com.example.lulu_app"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "684029695607-nuj90ctfouipnjrc8k933r2dbovcegaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyCOq3LmiU59KB1qGFZTqGo8deIrcekqbo0"
@@ -20,7 +25,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "684029695607-nuj90ctfouipnjrc8k933r2dbovcegaf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "684029695607-h63egj7qngg9hvk26amc90bck8uo7ft5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.luluApp"
+              }
+            }
+          ]
         }
       }
     }

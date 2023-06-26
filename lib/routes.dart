@@ -1,6 +1,8 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:lulu_app/auth.dart';
+import 'package:lulu_app/auth_services/auth.dart';
 import 'package:lulu_app/finanzas.dart';
+import 'package:lulu_app/auth_services/register.dart';
 import 'menu.dart';
 import 'usuarios.dart';
 import 'agenda.dart';
@@ -15,16 +17,27 @@ class Routes {
   static const post = 'post';
   static const finanzas = 'finanzas';
   static const login = 'login';
+  static const register = 'register';
 
   static Route routes(RouteSettings settings) {
     MaterialPageRoute _buildRoute(Widget widget) {
       return MaterialPageRoute(builder: (_) => widget, settings: settings);
     }
 
+    // Verificar si hay un usuario autenticado
+    User? currentUser = FirebaseAuth.instance.currentUser;
+
     switch (settings.name) {
       case menu:
-        if (FirebaseAuth.instance.authStateChanges()) {}
-        return _buildRoute(const Menu());
+        if (currentUser != null) {
+          // Usuario autenticado, ir al menú principal
+          return _buildRoute(Menu());
+        } else {
+          // Usuario no autenticado, ir a la pantalla de inicio de sesión
+          return _buildRoute(Auth());
+        }
+      case register:
+        return _buildRoute(RegisterPage());
       case agenda:
         return _buildRoute(const Agenda());
       case usuario:
@@ -41,4 +54,7 @@ class Routes {
         throw Exception('La ruta no existe');
     }
   }
+  
+  
+  
 }

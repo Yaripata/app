@@ -26,7 +26,7 @@ class FacebookPostWidget extends StatelessWidget {
           Row(
             children: [
               CircleAvatar(
-                backgroundImage: AssetImage('assets/profile_picture.jpg'),
+                backgroundImage: AssetImage('lib/images/default-user.jpg'),
                 radius: 24.0,
               ),
               SizedBox(width: 8.0),
@@ -58,7 +58,7 @@ class FacebookPostWidget extends StatelessWidget {
             style: TextStyle(fontSize: 16.0),
           ),
           SizedBox(height: 16.0),
-          Image.asset('assets/post_image.jpg'),
+          Image.asset('lib/images/default-user.jpg'),
           SizedBox(height: 16.0),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,

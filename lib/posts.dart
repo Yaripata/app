@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'componentes/post.dart';
 import 'main.dart';
 import 'routes.dart';
 
@@ -28,7 +29,8 @@ class Post extends StatelessWidget {
               ),
               title: Text("Texto"),
               subtitle: Text("subtitulo"),
-            )
+            ),
+            FacebookPostWidget()
           ],
         )),
       ),

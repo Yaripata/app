@@ -1,11 +1,16 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:lulu_app/main.dart';
 import 'routes.dart';
 import 'botones.dart';
 
 class Menu extends StatelessWidget {
-  const Menu({super.key});
+  final FirebaseAuth _auth = FirebaseAuth.instance;
+  Menu({super.key});
+
+  Future<void> _signOut(BuildContext context) async {
+    await _auth.signOut();
+    Navigator.pushNamedAndRemoveUntil(context, Routes.login, (route) => false);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +36,7 @@ class Menu extends StatelessWidget {
                 PopupMenuItem(
                   child: const Text("Cerrar sesion"),
                   onTap: () {
-                    FirebaseAuth.instance.signOut();
+                    _signOut(context);
                   },
                 ),
                 const PopupMenuItem(

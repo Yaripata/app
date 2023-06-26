@@ -8,7 +8,7 @@ import 'routes.dart';
 class Usuarios extends StatelessWidget {
   const Usuarios({super.key});
 
-   @override
+  @override
   Widget build(BuildContext context) {
     return FutureBuilder<List<User>>(
       future: _fetchUsers(),
@@ -39,7 +39,8 @@ class Usuarios extends StatelessWidget {
     List<User> users = [];
 
     try {
-      UserCredential credential = await FirebaseAuth.instance.signInAnonymously();
+      UserCredential credential =
+          await FirebaseAuth.instance.signInAnonymously();
       User? currentUser = credential.user;
 
       if (currentUser != null) {
